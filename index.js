@@ -48,7 +48,6 @@ function extractTextSub() {
 
 function extractText(){
     extractTextSub().then(function(text) {
-        console.log(text);
         process(text); 
       }).catch(function(error) {
         console.error(error);
