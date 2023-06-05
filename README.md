@@ -18,3 +18,9 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 
 - NOTE that it only works when headings are of the type "#","##" etc.
 - Special character in between two words in heading will not work (Ex:-Date & Time)
+
+## Images:-
+
+![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/4ff5eacd-9941-47ea-871e-df13f0d21f13)
+
+![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/6d4d7c21-9ba8-4065-ab59-b599fbbe650f)
