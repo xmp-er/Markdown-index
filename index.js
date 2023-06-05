@@ -14,9 +14,10 @@ function resetPaste(){
 let copy = document.querySelector("[copy]")
 copy.addEventListener("click",copyContent);
 
-function copyContent(){
-    const text = output.textContent;
-    navigator.clipboard.writeText(text.value);
+async function copyContent(){
+    const text = output.value;
+    console.log(text)
+    await navigator.clipboard.writeText(text);
     copy.innerHTML="Copied!"
 }
 
