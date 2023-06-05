@@ -16,9 +16,9 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 ## Demonstration images:-
 [Index](#index)
 
-![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/4ff5eacd-9941-47ea-871e-df13f0d21f13)
+![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/3a56a480-ad4c-4078-a689-c48c2ee18e60)
 
-![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/6d4d7c21-9ba8-4065-ab59-b599fbbe650f)
+![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/928c94cd-91b3-4066-9d94-48073fcb6cf4)
 
 ## Precautions for Heading so that Index can be properly generated:-
 [Index](#index)
