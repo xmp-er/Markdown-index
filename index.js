@@ -19,7 +19,7 @@ function resetPaste(){
     output.value="";
     copy.innerHTML="Copy Result"
 }
-
+//
 function extractTextSub() {
     return new Promise(function(resolve, reject) {
       var fileInput = document.getElementById("fileInput");
