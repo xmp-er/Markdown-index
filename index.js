@@ -1,15 +1,61 @@
 let input_obj = document.querySelector("[paste]");
-let generate = document.querySelector("[generate]");
-generate.addEventListener("click", process);
+input_obj.addEventListener("input",function(){
+    process(null);
+})
 let output = document.querySelector("[op]");
 let reset = document.querySelector("[reset]");
 reset.addEventListener("click",resetPaste);
 
+function openFileUpload() {
+    var fileInput = document.getElementById('fileInput');
+    fileInput.click();
+  }
+  
+
+let uploadButton = document.querySelector("[uploadedFile]");
+uploadButton.addEventListener("click",extractText);
 function resetPaste(){
     input_obj.value="";
     output.value="";
     copy.innerHTML="Copy Result"
 }
+
+function extractTextSub() {
+    return new Promise(function(resolve, reject) {
+      var fileInput = document.getElementById("fileInput");
+  
+      fileInput.onchange = function(event) {
+        var file = fileInput.files[0];
+        if (!file) {
+          reject("No file selected.");
+          return;
+        }
+  
+        var reader = new FileReader();
+  
+        reader.onload = function(event) {
+          var text = event.target.result;
+          resolve(text);
+        };
+  
+        reader.onerror = function(event) {
+          reject(event.target.error);
+        };
+  
+        reader.readAsText(file);
+      };
+    });
+  }
+
+function extractText(){
+    extractTextSub().then(function(text) {
+        console.log(text);
+        process(text); // Call the process function or perform further processing here
+      }).catch(function(error) {
+        console.error(error);
+      });
+}
+  
 
 let copy = document.querySelector("[copy]")
 copy.addEventListener("click",copyContent);
@@ -21,9 +67,9 @@ async function copyContent(){
     copy.innerHTML="Copied!"
 }
 
-function process(){
+function process(fileInput){
     copy.innerHTML="Copy Result"
-    pass_len = document.querySelector("[paste]").value.split('\n');
+    pass_len = fileInput==null?document.querySelector("[paste]").value.split('\n'):fileInput.split('\n');
     // console.log(pass_len.length);
     let res = "";
     let v = [];
