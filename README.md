@@ -1,4 +1,4 @@
-Access at https://markdownindexgenerator.netlify.app/
+Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC Generator</a>
 
 # Index
  - [Purpose:-](#purpose-)
@@ -8,7 +8,7 @@ Access at https://markdownindexgenerator.netlify.app/
 [Index](#index)
  
 
-Often times while taking notes on markdown files it becomes tiresome to make a TOC when you have a large amount of headings and sub-headings,<a href="https://markdownindexgenerator.netlify.app/">this site</a> aims to solve this by
+Often times while taking notes on markdown files it becomes tiresome to make a TOC when you have a large amount of headings and sub-headings,<a href="https://markdownindexgenerator.netlify.app/" target="_blank">this site</a> aims to solve this by
 - Automatically Generating TOC and inserting it into the beginning of the content
 - Adding link to index after each heading and sub-heading for easier navigation
 
