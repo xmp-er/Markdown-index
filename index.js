@@ -50,7 +50,7 @@ function extractTextSub() {
 function extractText(){
     extractTextSub().then(function(text) {
         console.log(text);
-        process(text); // Call the process function or perform further processing here
+        process(text); 
       }).catch(function(error) {
         console.error(error);
       });
