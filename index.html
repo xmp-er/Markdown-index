@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown Index Generator - Generate TOC for Markdown Documents</title>
+    <meta name="description" content="Generate a Table of Contents (TOC) for your Markdown documents online. This tool generates a TOC with links for all headings and adds it after each content heading.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="favicon_io/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .text-black {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-stone-900 h-screen w-screen text-white flex flex-col items-center justify-stretch gap-4">
+    <div class="box-border p-4 border-4 bg-white bg-opacity-20 rounded-3xl text-2xl text-center">Online Markdown Index Generator</div>
+    <h3>Generates entire content with a TOC for all the headings and adds a link to TOC after each content heading</h3> 
+    <div class="text-black flex gap-4 w-5/6 h-5/6 content ">
+      <!-- input -->
+      <div class="flex-col flex-auto flex bg-orange-600">
+        <button class="grow-0" reset>Reset</button>
+        <textarea paste class="w-full h-full" placeholder="Paste Markdown Content Here..."></textarea>
+        <button class="grow-0" generate>Generate</button>
+      </div>
+      <!-- output -->
+      <div class="flex flex-col flex-auto bg-orange-600">
+        <button class="grow-0" copy>Copy Result</button>
+        <textarea op class="w-full h-full" placeholder="Output Will Be Displayed Here..."></textarea>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <h3>Made for public service by <a href="https://github.com/xmp-er" class="text-xl text-blue-400">xmp-er <i style="font-size:24px" class="fa">&#xf09b;</i></a></h3>
+  </div>
+</body>
+</html>
