@@ -1,4 +1,4 @@
-Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC Generator</a>
+Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC(Table Of Contents)/Index Generator</a>
 
 # Index
  - [Purpose:-](#purpose-)
@@ -9,16 +9,17 @@ Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_bl
 [Index](#index)
 
 Often times while taking notes on markdown files it becomes tiresome to make a TOC when you have a large amount of headings and sub-headings,<a href="https://markdownindexgenerator.netlify.app/" target="_blank">this site</a> aims to solve this by
-- Automatically Generating TOC and inserting it into the beginning of the content
+- Automatically Generating TOC(Table Of Contents) and inserting it into the beginning of the content
 - Adding link to index after each heading and sub-heading for easier navigation
+- Lets you upload local markdown files and generates a Table Of Contents for it automatically
 
 
 ## Demonstration images:-
 [Index](#index)
 
-![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/3a56a480-ad4c-4078-a689-c48c2ee18e60)
+![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/58547fa0-cbbb-4808-8aee-907cfdf9ccc5)
 
-![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/928c94cd-91b3-4066-9d94-48073fcb6cf4)
+![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/a1b73564-7a63-46cf-b407-8d30385b5f8e)
 
 ## Precautions for Heading so that Index can be properly generated:-
 [Index](#index)
