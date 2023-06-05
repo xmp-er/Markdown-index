@@ -7,6 +7,8 @@ Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_bl
 # Purpose:-
 [Index](#index)
  
+# Images:-
+[Images](#images)
 
 Often times while taking notes on markdown files it becomes tiresome to make a TOC when you have a large amount of headings and sub-headings,<a href="https://markdownindexgenerator.netlify.app/" target="_blank">this site</a> aims to solve this by
 - Automatically Generating TOC and inserting it into the beginning of the content
@@ -20,6 +22,7 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 - Special character in between two words in heading will not work (Ex:-Date & Time)
 
 ## Images:-
+[Index](#index)
 
 ![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/4ff5eacd-9941-47ea-871e-df13f0d21f13)
 
