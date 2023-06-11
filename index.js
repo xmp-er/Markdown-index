@@ -48,7 +48,8 @@ function extractTextSub() {
 
 function extractText(){
     extractTextSub().then(function(text) {
-        process(text); 
+        process(text);
+        input_obj.value = text;
       }).catch(function(error) {
         console.error(error);
       });
@@ -60,10 +61,12 @@ copy.addEventListener("click",copyContent);
 
 async function copyContent(){
     const text = output.value;
-    console.log(text)
     await navigator.clipboard.writeText(text);
     copy.innerHTML="Copied!"
+    setTimeout(()=>{copy.innerHTML="Copy Result"},1000);
 }
+
+let spaces =[[1,1]];
 
 function process(fileInput){
     copy.innerHTML="Copy Result"
@@ -83,7 +86,7 @@ function process(fileInput){
             k += s[j];
         }
         let isHeading = false;
-        if(k=="#" || k=="##" || k=="###" || k=="####" || k=="#####"){
+        if(/^#+$/.test(k)){
             v.push(s);
             isHeading = true;
         }
@@ -114,11 +117,31 @@ function process(fileInput){
                 break;
             }
         }
-        for(let i=0; i<(cnt_Hash>1?cnt_Hash+1:cnt_Hash); i++){
+
+        if(cnt_Hash<spaces[spaces.length-1][1]){
+            while(cnt_Hash<spaces[spaces.length-1][1]){
+                spaces.pop();
+            }
+        }
+
+        let last_index_hashes = spaces[spaces.length-1][1];
+
+        let last_index_length = spaces[spaces.length-1][0];
+
+        if(cnt_Hash>last_index_hashes){
+            spaces.push([last_index_length=last_index_length+2,cnt_Hash]);
+        }
+
+
+
+        let lengths_to_be_added_before = last_index_length;
+
+        for(let i=0; i<lengths_to_be_added_before; i++){
             op+= ' ';
         }
         op += `- [`+filt+`]`;
-        let n=`#`;
+        let n=``;
+        for(var e=0;e<cnt_Hash;e++){n+=`#`}
         let index = 0;
         // console.log(v[i]);
         for(;index<v[i].length;index++){

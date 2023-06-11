@@ -33,15 +33,31 @@
     <h3>Generates entire content with a TOC for all the headings and adds a link to TOC after each content heading</h3> 
     <div class="text-black flex gap-4 w-5/6 h-5/6 content ">
       <!-- input -->
-      <div class="flex-col flex-auto flex bg-orange-600">
-        <button class="grow-0" reset>Reset</button>
-        <textarea paste class="w-full h-full" placeholder="Paste Markdown Content Here..."></textarea>
-        <button uploadButton class = "bg-[#0074D9]" type="button" onclick="openFileUpload()">Upload Markdown File</button>
-        <input uploadedFile class = "bg-[#0074D9]" type="file" id="fileInput" accept=".md">
+      <div class="flex-col flex-auto flex items-center justify-center gap-2">
+        <div class="flex flex-auto gap-4">
+          <button reset class="group relative h-12 w-48 overflow-hidden rounded-lg bg-teal-500 text-lg shadow">
+            <div class="absolute inset-0 w-3 bg-orange-600 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+            <span class="grow-0 relative text-black group-hover:text-white">Reset Content</span>
+          </button>
+          <div class="flex flex-col">
+            <button onclick="openFileUpload()" reset class="group relative h-12 w-48 overflow-hidden rounded-lg bg-indigo-500 text-lg shadow">
+              <div class="absolute inset-0 w-3 bg-orange-600 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="grow-0 relative text-black group-hover:text-white">Upload Markdown File</span>
+          </button>
+            <!-- <button uploadButton class = "bg-[#0074D9]" type="button" onclick="openFileUpload()">Upload Markdown File</button> -->
+            <input uploadedFile class = "bg-[#0074D9] no-effect" type="file" id="fileInput" accept=".md" style="display: none;">
+          </div>
+        </div>
+        <!-- <button class="grow-0 bg-orange-600" reset>Reset</button> -->
+        <textarea paste class="w-full h-full  focus:outline-none" placeholder="Paste Markdown Content Here..."></textarea>
       </div>
       <!-- output -->
-      <div class="flex flex-col flex-auto bg-orange-600">
-        <button class="grow-0" copy>Copy Result</button>
+      <div class="flex flex-col flex-auto items-center justify-center gap-2">
+        <button  copy class="group relative h-12 w-48 overflow-hidden rounded-lg bg-teal-500 text-lg shadow">
+          <div class="absolute inset-0 w-3 bg-orange-600 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+          <span class="grow-0 relative text-black group-hover:text-white">Copy Result</span>
+        </button>
+        <!-- <button class="grow-0 bg-orange-600" copy>Copy Result</button> -->
         <textarea op class="w-full h-full" placeholder="Output Will Be Displayed Here..."></textarea>
       </div>
     </div>
