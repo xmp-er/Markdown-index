@@ -14,7 +14,7 @@
 
 Often times while taking notes on markdown files it becomes tiresome to make a TOC when you have a large amount of headings and sub-headings,<a href="https://markdownindexgenerator.netlify.app/" target="_blank">this site</a> aims to solve this by
 - Automatically Generating TOC(Table Of Contents) and inserting it into the beginning of the content
-- Adding link to index after each heading and sub-heading for easier navigation
+- **_Adding link to main index after each heading and sub-heading for easier navigation_**
 - Lets you upload local markdown files and generates a Table Of Contents for it automatically
 
 
