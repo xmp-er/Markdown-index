@@ -1,9 +1,11 @@
-Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC(Table Of Contents)/Index Generator</a>
-
 # Index
+ - [Index](#index)
  - [Purpose:-](#purpose-)
-   - [Demonstration images](#demonstration-images-)
+   - [Demonstration images:-](#demonstration-images-)
    - [Precautions for Heading so that Index can be properly generated:-](#precautions-for-heading-so-that-index-can-be-properly-generated-)
+   - [Upcoming Updates](#upcoming-updates)
+
+Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC(Table Of Contents)/Index Generator</a>
 
 # Purpose:-
 [Index](#index)
@@ -27,3 +29,9 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 
 - NOTE that it only works when headings are of the type "#","##" etc.
 - Special character in between two words in heading will not work (Ex:-Date & Time)
+
+## Upcoming Updates
+[Index](#index)
+ 
+- [ ] UI updates
+- [ ] Extract markdown code from a Github link and generate index/TOC for it.
