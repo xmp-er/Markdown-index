@@ -6,6 +6,7 @@
    - [Demonstration images:-](#demonstration-images-)
    - [Precautions for Heading so that Index can be properly generated:-](#precautions-for-heading-so-that-index-can-be-properly-generated-)
    - [Upcoming Updates](#upcoming-updates)
+   - [Fixes](#fixes)
 
 
 # Purpose:-
@@ -20,9 +21,9 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 ## Demonstration images:-
 [Index](#index)
 
-![image](https://github.com/xmp-er/Markdown-index/assets/107166230/ea5f779f-1300-4132-a217-6c8ab0426be1)
+![image](https://github.com/xmp-er/Markdown-index/assets/107166230/0ee8a7fc-b4ae-428a-9bf4-7caf9b4ec4c9)
 
-![image](https://github.com/xmp-er/Markdown-TOC-Generator/assets/107166230/a1b73564-7a63-46cf-b407-8d30385b5f8e)
+![image](https://github.com/xmp-er/Markdown-index/assets/107166230/5aa5f4e6-903f-4e48-b00d-ca53ac667abe)
 
 ## Precautions for Heading so that Index can be properly generated:-
 [Index](#index)
@@ -34,6 +35,11 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 ## Upcoming Updates
 [Index](#index)
  
-- [ ] UI updates
+- [X] UI updates
 - [ ] Extract markdown code from a Github link and generate index/TOC for it.
 - [ ] Redirect feature to immediate parent heading along with index redirect.
+
+## Fixes
+[Index](#index)
+
+- [X] Fix for Recursive Heading not being properly generated
