@@ -1,3 +1,5 @@
+**_Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC(Table Of Contents)/Index Generator</a>_**
+
 # Index
  - [Index](#index)
  - [Purpose:-](#purpose-)
@@ -5,7 +7,6 @@
    - [Precautions for Heading so that Index can be properly generated:-](#precautions-for-heading-so-that-index-can-be-properly-generated-)
    - [Upcoming Updates](#upcoming-updates)
 
-Access site at <a href="https://markdownindexgenerator.netlify.app/" target="_blank">Markdown TOC(Table Of Contents)/Index Generator</a>
 
 # Purpose:-
 [Index](#index)
