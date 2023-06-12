@@ -38,6 +38,7 @@ Often times while taking notes on markdown files it becomes tiresome to make a T
 - [X] UI updates
 - [ ] Extract markdown code from a Github link and generate index/TOC for it.
 - [ ] Redirect feature to immediate parent heading along with index redirect.
+- [ ] parsing of html tags along with hashes in the heading
 
 ## Fixes
 [Index](#index)
