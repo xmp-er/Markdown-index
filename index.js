@@ -141,7 +141,7 @@ function process(fileInput){
         }
         op += `- [`+filt+`]`;
         let n=``;
-        for(var e=0;e<cnt_Hash;e++){n+=`#`}
+        n+=`#`;
         let index = 0;
         // console.log(v[i]);
         for(;index<v[i].length;index++){
